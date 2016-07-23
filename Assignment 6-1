@@ -1,0 +1,109 @@
+# Assignment-6-1
+
+Interface InterfaceDemo
+
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package interfaces;
+
+/**
+ *
+ * @author hp1
+ */
+public interface InterfaceDemo {
+    
+    
+    void input(int i);
+    
+}
+
+
+
+Class1.java
+
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package interfaces;
+
+/**
+ *
+ * @author hp1
+ */
+public class Class1 implements InterfaceDemo {
+
+    @Override
+    public void input(int i) {
+        
+        System.out.println ("The value of i is"+i);
+    }
+    
+}
+
+
+
+
+Class2.Java
+
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package interfaces;
+
+/**
+ *
+ * @author hp1
+ */
+public class Class2 implements InterfaceDemo {
+
+    @Override
+    public void input(int i) {
+            System.out.println("The square of i is "+(i*i));
+    }
+    
+}
+
+
+
+Interfaces.java
+
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package interfaces;
+
+/**
+ *
+ * @author hp1
+ */
+public class Interfaces {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Class1 c1=new Class1();
+        Class2 c2=new Class2();
+        c1.input(5);
+        c2.input(10);
+        
+        
+        
+        
+    }
+    
+}
